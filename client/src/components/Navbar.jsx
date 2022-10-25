@@ -11,14 +11,8 @@ import {
     Button
 } from '@mui/material'
 import { useSelector } from 'react-redux'
-// import LangSwitcher from './LangSwitcher'
+import LangSwitcher from './LangSwitcher'
 import { useTranslation } from 'react-i18next'
-
-const lngs = {
-    en: { nativeName: 'English' },
-    fr: { nativeName: 'Francais' },
-    nl: { nativeName: 'Nederlands' },
-}
 
 const Navbar = (props) => {
   const { t, i18n } = useTranslation()
@@ -47,7 +41,7 @@ const Navbar = (props) => {
                           sx={{
                             display: 'flex',
                             justifyContent: 'space-evenly',
-                        
+                            
                           }}>
                           <a className='navlink' href='/home' >{t('navigation.home')}</a>
                           <a className='navlink' href='/pricing' >{t('navigation.pricing')}</a>
@@ -55,9 +49,9 @@ const Navbar = (props) => {
                         </ListItem>
                       </List>
                     </Container >
-                    <Container maxWidth="sm" sx={{ display: 'flex', justifyContent:"flex-end" }}>
-                      {/* <LangSwitcher /> */}
-                    <a href="#" target="_blank" rel="noopener noreferrer" download><Button variant="contained">Download my CV</Button></a>
+                    <Container maxWidth="sm" sx={{ display: 'flex', justifyContent:"flex-end", gap: 5 }}>
+                      <Button component="a" href="#" variant="contained">Book Us</Button>
+                      <LangSwitcher />
                     </Container>
                   </Container>
                 </Toolbar>

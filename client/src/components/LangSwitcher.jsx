@@ -1,4 +1,4 @@
-import { useState, useRef, } from 'react';
+import { useState, useRef, useContext } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import {
     Button,
@@ -12,46 +12,51 @@ import {
 } from '@mui/material'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useTranslation } from 'react-i18next'
+import i18next from 'i18next';
+import LocaleContext from "../utils/LocaleContext"
+
+const lngs = {
+  en: { nativeName: 'English' },
+  fr: { nativeName: 'Francais' },
+  nl: { nativeName: 'Nederland' },
+}
 
 export default function LangSwitcher() {
     const [open, setOpen] = useState(false)
     const anchorRef = useRef(null)
-    // const [selectedIndex, setSelectedIndex] = useState(1)
-    // const lang = useSelector((state) => state.i18n.lang);
-    // const supportedLangs = useSelector((state) => state.i18n.supportedLangs);
-    const x = useSelector((state) => state)
-    const { lang, supportedLangs, setLang } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const [lang, setLang] = useState('en')
+    const { locale } = useContext(LocaleContext);
 
-    const dispatch = useDispatch()
+    // const handleMenuItemClick = (lng) => {
+    //   setLang
+    //   i18n.changeLanguage(lng)
+    //   setOpen(false);
+    // };
 
-    // console.log(x)
-    // console.log(lang)
-    // console.log(supportedLangs)
-    const handleClick = () => {
-        // console.info(`You clicked ${supportedLangs[selectedIndex]}`);
-      };
-    
-      const handleMenuItemClick = (event, index) => {
-        // setSelectedIndex(index);
-        setOpen(false);
-      };
-    
-      const handleToggle = () => {
-        setOpen((prevOpen) => !prevOpen);
-      };
-    
-      const handleClose = (event) => {
-        if (anchorRef.current && anchorRef.current.contains(event.target)) {
-          return;
-        }
-    
-        setOpen(false);
-      };
+    function changeLocale (l) {
+      if (locale !== l) {
+        i18n.changeLanguage(l);
+        setLang(i18n.language)
+      }
+    }
+  
+    const handleToggle = () => {
+      setOpen((prevOpen) => !prevOpen);
+    };
+  
+    const handleClose = (event) => {
+      if (anchorRef.current && anchorRef.current.contains(event.target)) {
+        return;
+      }
+  
+      setOpen(false);
+    };
 
     return (
       <>
         <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-            <Button onClick={handleClick} onChange={(newLang) => setLang(newLang)}>{lang}</Button>
+            <Button >{lang}</Button>
             <Button
               size="small"
               aria-controls={open ? 'split-button-menu' : undefined}
@@ -83,16 +88,14 @@ export default function LangSwitcher() {
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList id="split-button-menu" autoFocusItem>
-                    {Object.entries(supportedLangs).map(([code, name]) => (
+                    {Object.keys(lngs).map((lng) => (
                       <MenuItem
-                        key={name}
-                        // value={code}
-                        onClick={(code) => dispatch(setLang(code))}
+                        key={lng}
                         // disabled={index === 2}
                         // selected={index === selectedIndex}
-                        // onClick={(event) => handleMenuItemClick(event, index)}
+                        onClick={() => changeLocale(lng)}
                       >
-                        {name}
+                        {lngs[lng].nativeName}
                       </MenuItem>
                     ))}
                   </MenuList>

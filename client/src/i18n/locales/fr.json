@@ -25,9 +25,8 @@
     "title": "Company name"
   },
   "navigation": {
-    "links": {
-      "home": "Home",
-      "about": "About"
-    }
+      "home": "Accueil",
+      "pricing": "Tarif",
+      "contact": "Contact"
   }
 }
