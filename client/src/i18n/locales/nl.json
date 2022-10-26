@@ -25,10 +25,8 @@
     "title": "Company name"
   },
   "navigation": {
-    "links": {
-      "home": "Accueil",
+      "home": "Huis",
       "pricing": "Tarif",
       "contact": "Contact"
-    }
   }
 }
