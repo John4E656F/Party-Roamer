@@ -22,6 +22,7 @@ const lngs = {
 }
 
 export default function LangSwitcher() {
+
     const [open, setOpen] = useState(false)
     const anchorRef = useRef(null)
     const { t, i18n } = useTranslation();
@@ -35,9 +36,12 @@ export default function LangSwitcher() {
     // };
 
     function changeLocale (l) {
+      console.log(l)
       if (locale !== l) {
         i18n.changeLanguage(l);
         setLang(i18n.language)
+        // window.location.replace(`/${l}`)
+        // localStorage.setItem("i18nextLng", lang)
       }
     }
   
