@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { useTranslation } from "react-i18next"
 import { BrowserRouter } from 'react-router-dom'
 import LocaleContext from "./utils/LocaleContext"
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar'
 
 const Home = React.lazy(() => import('./pages/Home'))
 const Pricing = React.lazy(() => import('./pages/Pricing'))

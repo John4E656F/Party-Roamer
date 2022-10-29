@@ -18,9 +18,9 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import { useSelector } from 'react-redux'
-import LangSwitcher from '../LangSwitcher'
+import LangSwitcher from './LangSwitcher'
 import { useTranslation } from 'react-i18next'
-import Logo from '../../assets/PartyRoamerLogo.svg'
+import Logo from '../assets/PartyRoamerLogo.svg'
 
 const Navbar = (props) => {
   const { t, i18n } = useTranslation()
