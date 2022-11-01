@@ -12,14 +12,14 @@ const Home = () => {
 
     return(
         <Fragment>
-            <Grid container>
-                <Grid item xs={12} >
+            {/* <Grid container sx={{ flexDirection: 'row', }}> */}
+                {/* <Grid item xs={12} > */}
                     <Hero />
-                </Grid>
-                <Grid item xs={12}>
-                    {/* <Intro /> */}
-                </Grid>
-            </Grid>
+                {/* </Grid> */}
+                {/* <Grid item xs={12}> */}
+                    <Intro />
+                {/* </Grid> */}
+            {/* </Grid> */}
         </Fragment>
     )
 }
