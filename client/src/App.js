@@ -1,24 +1,23 @@
 import React from 'react';
-import { Provider } from 'react-redux'
+import { ThemeProvider } from '@mui/material/styles';
 import AppRoutes from './routing'
 
-// import darkTheme from './theme';
+import themes from './themes/index';
 import {
-	ThemeProvider,
 	CssBaseline,
 	useTheme
   } from '@mui/material'
 import './App.css';
 
 function App() {
-  // const theme = useTheme();
+  const themes = useTheme();
   
   return (
     <>
-    {/* <ThemeProvider theme={darkTheme}> */}
+    <ThemeProvider theme={themes}>
         <CssBaseline />
         <AppRoutes />
-    {/* </ThemeProvider> */}
+    </ThemeProvider>
     </>
   );
 }

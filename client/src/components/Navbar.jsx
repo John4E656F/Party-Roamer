@@ -6,7 +6,7 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Container,
+  Grid,
   List,
   ListItem,
   ListItemButton,
@@ -20,7 +20,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useSelector } from 'react-redux'
 import LangSwitcher from './LangSwitcher'
 import { useTranslation } from 'react-i18next'
-import Logo from '../assets/PartyRoamerLogo.svg'
+import Logo from '../assets/images/PartyRoamerLogo.svg'
 
 const Navbar = (props) => {
   const { t, i18n } = useTranslation()
@@ -59,11 +59,11 @@ const Navbar = (props) => {
               elevation={0}
           >
               <Toolbar >
-                <Container width="xl"
+                <Grid container
                   sx={{
-                    display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
+                    padding: { xs: "0 0 0 0", md: "0 7em 0 7em" } ,
                     // gap: "10px",
 
                   }}>
@@ -110,7 +110,7 @@ const Navbar = (props) => {
                         {drawer}
                       </Drawer>
                   </Box>
-                </Container>
+                </Grid>
               </Toolbar>
           </AppBar>
         </Box>
