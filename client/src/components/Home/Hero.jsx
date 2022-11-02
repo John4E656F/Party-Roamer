@@ -36,6 +36,11 @@ const Hero = () => {
     right: 0;
     width: 50%;
     color: #fff;
+
+    @media (max-width: 600px) {
+        margin-top: 5%;
+        width: 65%;
+    }
     `
 
     const Video = styled.video`
@@ -58,9 +63,9 @@ const Hero = () => {
                         backgroundColor: '#B8B8B8', 
                         width: 'auto',
                     }}>
-                        <Typography variant='h3' 
+                        <Typography variant='h1' 
                             sx={{ 
-                                fontSize: { xs: '16px', sm: '20px', md: '26px' },
+                                fontSize: { xs: '25px', sm: '40px', md: '26px' },
                                 fontStyle: 'bold',
                                 mb: 2
                             }}>{t('home.hero.text')}</Typography>

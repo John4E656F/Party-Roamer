@@ -59,8 +59,8 @@ export default function LangSwitcher() {
 
     return (
       <>
-        <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-            <Button >{lang}</Button>
+        <ButtonGroup variant="outlined" color='inherit' size='small' ref={anchorRef} aria-label="split button">
+            <Button size='small'>{lang}</Button>
             <Button
               size="small"
               aria-controls={open ? 'split-button-menu' : undefined}
