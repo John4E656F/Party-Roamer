@@ -8,8 +8,13 @@ import {
     styled,
     Button,
 } from '@mui/material'
+import { useTranslation } from 'react-i18next'
+
+import ProductIntro from './ProductIntro'
 
 const Intro = () => {
+    const { t, i18n } = useTranslation()
+
     return (
         <Grid container sx={{ 
             position: 'relative', 
@@ -18,14 +23,15 @@ const Intro = () => {
             width: '100%', 
             height: '1000px', 
             justifyContent: 'center',
+            textAlign: 'center',
         }}>
-            <Grid item sx={{ mt: '5%', width: '50%'}}>
-            <Typography variant='p' sx={{ textAlign: 'center', color: 'white'}}>
-            A photo booth is the perfect, fun addition to any event or party you are planning. 
-            Our Roaming Photo Booth will make a lasting impression at any event you are hosting, 
-            and will add a personal touch that will impress your guests. 
-            Show people the amazing time that can be had in a new, interactive way of photo booth experiences.
-            </Typography>
+            <Grid item xs={8} sx={{ mt: '5%', height: 'auto', backgroundColor: 'red'}}>
+                <Typography variant='p' sx={{  color: 'white', fontSize: { xs: '16px', sm: '20px', md: '26px' },}}>
+                {t('home.intro')}
+                </Typography>
+            </Grid>
+            <Grid item xs={8} sx={{}}>
+                <ProductIntro />
             </Grid>
         </Grid>
     )

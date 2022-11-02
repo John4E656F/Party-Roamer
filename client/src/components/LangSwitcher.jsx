@@ -95,8 +95,6 @@ export default function LangSwitcher() {
                     {Object.keys(lngs).map((lng) => (
                       <MenuItem
                         key={lng}
-                        // disabled={index === 2}
-                        // selected={index === selectedIndex}
                         onClick={() => changeLocale(lng)}
                       >
                         {lngs[lng].nativeName}
