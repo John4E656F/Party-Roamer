@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom'
 import LocaleContext from "./utils/LocaleContext"
 import Navbar from './components/Navbar'
 
-const Home = React.lazy(() => import('./pages/Home'))
-const Pricing = React.lazy(() => import('./pages/Pricing'))
+const Home = React.lazy(() => import('./views/Home'))
+const Pricing = React.lazy(() => import('./views/Pricing'))
 
 const Routing = () => {
     const { i18n } = useTranslation()
@@ -21,8 +21,8 @@ const Routing = () => {
                 <Suspense fallback={<div>Loading...</div>}>
                 <Navbar />
                     <Routes>
-                        <Route path="/:locale" element={<Home />} />
-                        <Route path="/:locale/pricing" element={<Pricing />} />
+                        <Route path="/" element={<Home />} />
+                        <Route path="/pricing" element={<Pricing />} />
                     </Routes>
                 </Suspense>
             </BrowserRouter>
