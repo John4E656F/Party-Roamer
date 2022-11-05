@@ -1,17 +1,16 @@
 {
   "home": {
-    "title": "Posts",
-    "form": {
-      "title": "title",
-      "body": "body",
-      "validation": {
-        "title-required": "title can't be empty",
-        "title-max": "title must not exceed {{num}} characters",
-        "body-required": "body can't be empty"
-      }
+    "hero": {
+      "text": "Take your event to the next level",
+      "button": "Discover More"
+    },
+    "intro": "A photo booth is the perfect, fun addition to any event or party you are planning. Our Roaming Photo Booth will make a lasting impression at any event you are hosting, and will add a personal touch that will impress your guests. Show people the amazing time that can be had in a new, interactive way of photo booth experiences.",
+    "product": {
+      "title": "Party Roamer Photobooth",
+      "body": "Also known as an open-air photo booth or selfie station, roaming booths have become more popular because they often have an interactive screen for participants, can deliver photos digitally, fit more people in the photos, have more options for software, and are generally more inviting, modern, and attractive than the traditional style."
     },
     "buttons": {
-      "submit": "Add new Post",
+      "book": "Book now",
       "reset": "Reset",
       "delete": "Delete",
       "update": "Update"

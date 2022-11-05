@@ -9,10 +9,10 @@ import {
     Typography,
     Button,
 } from '@mui/material'
-
+import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
-
+    const { t, i18n } = useTranslation()
 
     return(
         <Grid container>

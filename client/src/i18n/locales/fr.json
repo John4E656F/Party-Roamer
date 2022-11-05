@@ -1,17 +1,16 @@
 {
   "home": {
-    "title": "Posts",
-    "form": {
-      "title": "title",
-      "body": "body",
-      "validation": {
-        "title-required": "title can't be empty",
-        "title-max": "title must not exceed {{num}} characters",
-        "body-required": "body can't be empty"
-      }
+    "hero": {
+      "text": "Faites passer votre événement au niveau supérieur",
+      "button": "Découvrir plus"
+    },
+    "intro": "Un photomaton est le complément parfait et amusant à tout événement ou fête que vous planifiez. Notre photomaton itinérant fera une impression durable à tout événement que vous organisez et ajoutera une touche personnelle qui impressionnera vos invités. Montrez aux gens le temps incroyable qui peut être passé d'une nouvelle manière interactive d'expériences de photomaton.",
+    "product": {
+      "title": "Party Roamer Photobooth",
+      "body": "Également connus sous le nom de photomaton en plein air ou de station de selfie, les cabines itinérantes sont devenues plus populaires car elles ont souvent un écran interactif pour les participants, peuvent fournir des photos numériquement, faire apparaître plus de personnes sur les photos, avoir plus d'options pour les logiciels et sont généralement plus invitant, moderne et attrayant que le style traditionnel."
     },
     "buttons": {
-      "submit": "Add new Post",
+      "book": "Reserve maintenant",
       "reset": "Reset",
       "delete": "Delete",
       "update": "Update"
@@ -26,7 +25,7 @@
   },
   "navigation": {
       "home": "Accueil",
-      "pricing": "Tarif",
+      "pricing": "Nos Tarif",
       "contact": "Contact"
   }
 }

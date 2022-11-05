@@ -67,27 +67,29 @@ const Navbar = (props) => {
                     // gap: "10px",
 
                   }}>
-                    <Box sx={{flexGrow: 1}}>
-                      <Avatar src={Logo} sx={{ width: 60, height: 60, }} />
-                    </Box>
+                  <Grid item xs={2}>
+                    <Avatar src={Logo} sx={{ width: 60, height: 60, }} />
+                  </Grid>
+                  <Grid item xs={8}>
                     <List sx={{ display: { xs: 'none', sm: 'flex' }, flexGrow: 2 }}>
-                        <ListItem alignItems="flex-start"
-                          sx={{
-                            display: 'flex',
-                            justifyContent: 'space-evenly',
-                            
-                          }}>
-                            {navItems.map((item) => (
-                              <Button key={item} sx={{ color: '#fff' }}>
-                                {item}
-                              </Button>
-                            ))}
-                        </ListItem>
-                      </List>
-                  <Box  sx={{ display: { xs: 'none', sm: 'flex'}, flexGrow:1, justifyContent:"flex-end", }}>
+                      <ListItem alignItems="flex-start"
+                        sx={{
+                          display: 'flex',
+                          justifyContent: 'space-evenly',
+                          fontSize: { xs: '16px', sm: '20px', md: '26px' },
+                        }}>
+                          {navItems.map((item) => (
+                            <Button key={item} sx={{ color: '#fff' }}>
+                              {item}
+                            </Button>
+                          ))}
+                      </ListItem>
+                    </List>
+                  </Grid>
+                  <Grid item xs={2} sx={{ display: { xs: 'none', sm: 'flex'}, gap: 2, flexGrow:1, justifyContent:"flex-end", }}>
                       <Button component="a" href="#" variant="contained">Book Us</Button>
                       <LangSwitcher />
-                  </Box>
+                  </Grid>
                   <IconButton
                     color="inherit"
                     aria-label="open navigation"

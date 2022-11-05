@@ -59,8 +59,8 @@ export default function LangSwitcher() {
 
     return (
       <>
-        <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-            <Button >{lang}</Button>
+        <ButtonGroup variant="outlined" color='inherit' size='small' ref={anchorRef} aria-label="split button">
+            <Button size='small'>{lang}</Button>
             <Button
               size="small"
               aria-controls={open ? 'split-button-menu' : undefined}
@@ -95,8 +95,6 @@ export default function LangSwitcher() {
                     {Object.keys(lngs).map((lng) => (
                       <MenuItem
                         key={lng}
-                        // disabled={index === 2}
-                        // selected={index === selectedIndex}
                         onClick={() => changeLocale(lng)}
                       >
                         {lngs[lng].nativeName}
