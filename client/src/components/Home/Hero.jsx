@@ -17,8 +17,8 @@ const Hero = () => {
 
     return(
         <Grid container sx={{m: "3% 0 3% 0"}}>
-            <Grid item md={12} sx={{ textAlign: "center", alignContent: "center",  }}>
-                <Typography variant="h2" component="h2" gutterBottom sx={{  }}>
+            <Grid item xs={12} md={12} sx={{ textAlign: "center", alignContent: "center",  }}>
+                <Typography variant="h2" component="h2" gutterBottom>
                 {t('home.hero.title')}
                 </Typography>
                 <Typography variant="h4" component="h4" gutterBottom>
@@ -36,7 +36,7 @@ const Hero = () => {
                     </Button>
                 </ButtonGroup>
             </Grid>
-            <Grid item md={12} sx={{ justifyContent: "center", }}>
+            <Grid item xs={12} md={12} sx={{ justifyContent: "center", mt: "2%" }}>
                 <HeroVideo />
             </Grid>
         </Grid>

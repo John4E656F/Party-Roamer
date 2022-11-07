@@ -14,8 +14,6 @@ const Event = () => {
 
     return (
         <Grid container sx={{ 
-            position: 'relative', 
-            top: { xs: '165px', sm: '330px', md: '500px', lg: '670px', xl: '860px' }, 
             width: '100%', 
             justifyContent: 'center',
             textAlign: 'center',

@@ -17,7 +17,7 @@ const ProductIntro = () => {
     const { t, i18n } = useTranslation()
 
     return(
-        <Card raised='true' sx={{ background: 'transparent', color: 'white', p: '5% 2% 5% 2%', mb: '5%'}}>
+        <Card sx={{ background: 'transparent', color: 'white', p: '5% 2% 5% 2%', mb: '5%'}}>
             <Grid container>
             <Grid item xs={12} md={6}>
                 <CardContent sx={{ display: 'flex', flexDirection: 'column', gap: 2, }}>

@@ -17,7 +17,6 @@ const Home = () => {
             <Hero />
             <Intro />
             <Event />
-            <Footer />
         </Fragment>
     )
 }
