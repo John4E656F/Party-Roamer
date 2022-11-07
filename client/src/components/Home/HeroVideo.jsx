@@ -13,10 +13,7 @@ const HeroVideo = () => {
 
     const Video = styled.video`
     width: 60%;
-    @media (max-width: 600px) {
-        width: 100%
-    };
-    @media (max-width: 300px) {
+    @media only screen and (max-width: 600px) {
         width: 90%
     };
     `
