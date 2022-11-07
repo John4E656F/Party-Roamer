@@ -9,6 +9,22 @@
       "title": "Party Roamer Photobooth",
       "body": "Also known as an open-air photo booth or selfie station, roaming booths have become more popular because they often have an interactive screen for participants, can deliver photos digitally, fit more people in the photos, have more options for software, and are generally more inviting, modern, and attractive than the traditional style."
     },
+    "event": {
+      "title": "PERFECT FOR ANY EVENT!",
+      "body": "Roaming photo booths have been a huge trend when it comes to adding interactive fun at events. At Party Roamer, we`ve taken a different approach to maintain a high level of quality but still providing a mobile solution for any type of events",
+      "corporate": {
+        "title": "Corporate Events",
+        "body": "We love working with corporate companies to deliver engaging and sharable experiences. We can increase your brand awareness by over 120%"
+      },
+      "private": {
+        "title": "Weddings and Private Events",
+        "body": "Our photo booth is perfect for capturing all the unforgettable moments. Adding an exicting activity for your guess"
+      },
+      "holiday": {
+        "title": "Holiday Events",
+        "body": "Renting a photo booth for your next holiday party creates lasting cheerful memories. We can make your holiday event exciting and memorable"
+      }
+    },
     "buttons": {
       "book": "Book now",
       "reset": "Reset",

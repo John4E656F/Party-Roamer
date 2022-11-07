@@ -9,6 +9,22 @@
       "title": "Party Roamer Photobooth",
       "body": "Également connus sous le nom de photomaton en plein air ou de station de selfie, les cabines itinérantes sont devenues plus populaires car elles ont souvent un écran interactif pour les participants, peuvent fournir des photos numériquement, faire apparaître plus de personnes sur les photos, avoir plus d'options pour les logiciels et sont généralement plus invitant, moderne et attrayant que le style traditionnel."
     },
+    "event": {
+      "title": "PARFAIT POUR TOUT ÉVÉNEMENT !",
+      "body": "Les Photobooth ont été une tendance énorme lorsqu'il s'agit d'ajouter du plaisir interactif lors d'événements. Chez Party Roamer, nous avons adopté une approche différente pour maintenir un haut niveau de qualité tout en fournissant une solution mobile pour tout type d'événement.",
+      "corporate": {
+        "title": "Événements d'entreprise",
+        "body": "Nous aimons travailler avec des entreprises pour offrir des expériences engageantes et partageables. Nous pouvons augmenter la notoriété de votre marque de plus de 120%"
+      },
+      "private": {
+        "title": "Mariages et événements privés",
+        "body": "Notre photomaton est parfait pour capturer tous les moments inoubliables. Ajouter une activité passionnante pour votre estimation"
+      },
+      "holiday": {
+        "title": "Événements de vacances",
+        "body": "La location d'un photomaton pour votre prochaine fête de vacances crée des souvenirs joyeux et durables. Nous pouvons rendre votre événement de vacances excitant et mémorable"
+      }
+    },
     "buttons": {
       "book": "Reserve maintenant",
       "reset": "Reset",

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next"
 import { BrowserRouter } from 'react-router-dom'
 import LocaleContext from "./utils/LocaleContext"
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const Home = React.lazy(() => import('./views/Home'))
 const Pricing = React.lazy(() => import('./views/Pricing'))
@@ -24,6 +25,7 @@ const Routing = () => {
                         <Route path="/" element={<Home />} />
                         <Route path="/pricing" element={<Pricing />} />
                     </Routes>
+                <Footer />
                 </Suspense>
             </BrowserRouter>
         </LocaleContext.Provider>
