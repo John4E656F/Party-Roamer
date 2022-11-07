@@ -17,15 +17,15 @@ const Intro = () => {
 
     return (
         <Grid container sx={{ 
-            position: 'relative', 
-            top: { xs: '165px', sm: '330px', md: '500px', lg: '670px', xl: '860px' }, 
             backgroundColor: 'blue', 
             width: '100%', 
             justifyContent: 'center',
             textAlign: 'center',
         }}>
             <Grid item xs={8} sx={{ mt: '5%', height: 'auto', }}>
-                <Typography variant='p' sx={{  color: 'white', fontSize: { xs: '16px', sm: '20px', md: '26px' },}}>
+                <Typography variant='p' sx={{  color: 'white', 
+                fontSize: { xs: '16px', sm: '18px', md: '20px' },
+                }}>
                 {t('home.intro')}
                 </Typography>
             </Grid>
