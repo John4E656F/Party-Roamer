@@ -67,10 +67,10 @@ const Navbar = (props) => {
                     // gap: "10px",
 
                   }}>
-                  <Grid item xs={2}>
+                  <Grid item sm={2}>
                     <Avatar src={Logo} sx={{ width: 60, height: 60, }} />
                   </Grid>
-                  <Grid item xs={8}>
+                  <Grid item sm={8}>
                     <List sx={{ display: { xs: 'none', sm: 'flex' }, flexGrow: 2 }}>
                       <ListItem alignItems="flex-start"
                         sx={{
@@ -86,7 +86,7 @@ const Navbar = (props) => {
                       </ListItem>
                     </List>
                   </Grid>
-                  <Grid item xs={2} sx={{ display: { xs: 'none', sm: 'flex'}, gap: 2, flexGrow:1, justifyContent:"flex-end", }}>
+                  <Grid item sm={2} sx={{ display: { xs: 'none', sm: 'flex'}, gap: 2, flexGrow:1, justifyContent:"flex-end", }}>
                       <Button component="a" href="#" variant="contained">Book Us</Button>
                       <LangSwitcher />
                   </Grid>

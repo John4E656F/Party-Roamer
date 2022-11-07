@@ -2,24 +2,22 @@ import React, { Fragment, FC } from 'react'
 import { useSelector } from 'react-redux'
 
 //Import Component
-import Hero from '../components/Home/Hero'
-import Intro from '../components/Intro/index'
 import {
     Grid,
 } from '@mui/material'
+import Hero from '../components/Home/Hero'
+import Intro from '../components/Intro/index'
+import Event from '../components/Event/index'
+import Footer from '../components/Footer'
 
 const Home = () => {
 
     return(
         <Fragment>
-            {/* <Grid container sx={{ flexDirection: 'row', }}> */}
-                {/* <Grid item xs={12} > */}
-                    <Hero />
-                {/* </Grid> */}
-                {/* <Grid item xs={12}> */}
-                    <Intro />
-                {/* </Grid> */}
-            {/* </Grid> */}
+            <Hero />
+            <Intro />
+            <Event />
+            <Footer />
         </Fragment>
     )
 }

@@ -11,6 +11,22 @@
       "title": "Party Roamer Photobooth",
       "body": "Ook bekend als een openluchtfotohokje of selfiestation, zijn roamingcabines populairder geworden omdat ze vaak een interactief scherm voor deelnemers hebben, foto's digitaal kunnen aanleveren, meer mensen op de foto's passen, meer opties voor software hebben en over het algemeen uitnodigender, moderner en aantrekkelijker dan de traditionele stijl."
     },
+    "event": {
+      "title": "PERFECT VOOR ELK EVENEMENT!",
+      "body": "Photobooth zijn een enorme trend als het gaat om het toevoegen van interactief plezier op evenementen. Bij Party Roamer hebben we een andere benadering gekozen om een ​​hoog kwaliteitsniveau te behouden, maar toch een mobiele oplossing te bieden voor elk type evenement",
+      "corporate": {
+        "title": "Corporate Events",
+        "body": "We werken graag samen met bedrijven om boeiende en deelbare ervaringen te bieden. We kunnen uw naamsbekendheid met meer dan 120% vergroten"
+      },
+      "private": {
+        "title": "Bruiloften en privé-evenementen",
+        "body": "Onze photobooth is perfect voor het vastleggen van alle onvergetelijke momenten. Een spannende activiteit toevoegen om te raden"
+      },
+      "holiday": {
+        "title": "Holiday Events",
+        "body": "Het huren van een fotohokje voor uw volgende vakantiefeest zorgt voor blijvende, vrolijke herinneringen. We kunnen uw vakantie-evenement spannend en gedenkwaardig maken"
+      }
+    },
     "buttons": {
       "book": "Boek nu",
       "reset": "Reset",

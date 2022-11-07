@@ -2,6 +2,7 @@ import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import HttpBackend from "i18next-http-backend";
 import LanguageDetector from 'i18next-browser-languagedetector'
+import Cache from 'i18next-localstorage-cache'
 
 import en from './locales/en.json'
 import fr from './locales/fr.json'
@@ -10,6 +11,7 @@ import nl from './locales/nl.json'
 
 //UNUSED
 i18n
+    .use(Cache)
     .use(HttpBackend)
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -30,7 +32,16 @@ i18n
             nl: {
                 translation: nl,
             },
-    },
-})
+        },
+        cache: {
+            enabled: true,
+            expirationTime: 7*24*60*60*1000,
+            versions: { 
+                ne: 'v1',
+                fr: 'v1',
+                nl: 'v1'
+            }
+        },
+    })
 
 export default i18n
