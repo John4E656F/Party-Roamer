@@ -1,47 +1,34 @@
 import React from 'react';
 import {
     Grid,
-    List,
-    ListItem,
-    ListItemText,
     Typography,
     Button,
     Card,
     CardActions,
+    CardActionArea,
     CardContent,
     CardMedia,
 } from '@mui/material'
-import AdjustIcon from '@mui/icons-material/Adjust';
 import { useTranslation } from 'react-i18next'
 
-import rrModes from '../../assets/images/rrModes.png'
+import RrImage from '../../assets/images/rrExample.jpg'
 
-const ProductIntro = () => {
+const RingRoamer = () => {
     const { t } = useTranslation()
 
-    const bulletPointText = [t('home.product.twoInOne'), t('home.product.attendant'), t('home.product.modern')]
-
     return(
-        <Card sx={{  p: {xs:'5% 0% 5% 0%', md:'5% 2% 5% 2%'}, backgroundColor: '#373739', color: 'white' }} >
+        <Card sx={{ background: 'transparent', p: '5% 2% 5% 2%', mb: '5%', }}>
             <Grid container sx={{ alignItems: 'center' }}>
             <Grid item xs={12} md={6} >
                 <CardContent sx={{ display: 'flex', flexDirection: 'column', gap: 2, }}>
-                    <Typography variant="h3" sx={{
-                        fontWeight: 'bold',
-                        fontSize: {  xs: '20px', sm: 'calc(20px + 0.390625vw)', md: 'calc(20px + 0.390625vw)' },
-                    }}>
+                    <Typography variant="h3">
                         {t('home.product.title')}
                     </Typography>
-                    <List dense sx={{
+                    <Typography variant="p" sx={{
                         fontSize: { xs: '16px', sm: '18px', md: '20px' },
                     }}>
-                    {bulletPointText.map((item) => (
-                        <ListItem key={item} >
-                           <AdjustIcon />
-                            <ListItemText sx={{ ml: {xs: '5%', md: '2%'} }}>{item}</ListItemText>
-                        </ListItem>
-                    ))}
-                    </List>
+                        {t('home.product.body')}
+                    </Typography>
                     <CardActions sx={{ justifyContent: 'center'}}>
                         <Button variant="contained" color='cta'>
                             {t('home.buttons.book')}
@@ -53,7 +40,7 @@ const ProductIntro = () => {
                 <CardMedia
                     component='img'
                     height='400px'
-                    image={rrModes}
+                    image={RrImage}
                     alt='Ring Roamer, Roaming Photobooth'
                     sx={{ objectFit: 'contain', }}
                 />
@@ -63,4 +50,4 @@ const ProductIntro = () => {
     )
 }
 
-export default ProductIntro
+export default RingRoamer

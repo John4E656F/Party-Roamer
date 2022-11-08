@@ -82,7 +82,7 @@ const Navbar = (props) => {
                     </List>
                   </Grid>
                   <Grid item md={4} lg={4} sx={{ alignItems: 'center', display: { xs: 'none', md: 'flex'}, gap: 1, flexGrow:1, justifyContent:"flex-end", }}>
-                      <Button component="a" href="#" variant="contained">Book Us</Button>
+                      <Button component="a" href="#" variant="contained" color="cta">Book Us</Button>
                       <LangSwitcher />
                   </Grid>
                     <IconButton

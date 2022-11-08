@@ -22,15 +22,14 @@ const Intro = () => {
             justifyContent: 'center',
             textAlign: 'center',
         }}>
-            <Grid item xs={8} sx={{ height: 'auto', }}>
-                <Typography variant='p' sx={{
-                fontWeight: 'bold',
-                fontSize: {  xs: '20px', sm: 'calc(20px + 0.390625vw)', md: 'calc(20px + 0.390625vw)' },
+            <Grid item xs={8} sx={{ mt: '5%', height: 'auto', }}>
+                <Typography variant='p' sx={{  
+                fontSize: { xs: '18px', sm: '22px', md: '22px' },
                 }}>
                 {t('home.intro')}
                 </Typography><br/>
-                <Typography variant='p' sx={{
-                fontSize: {  xs: '16px', sm: 'calc(16px + 0.390625vw)', md: 'calc(16px + 0.390625vw)' },
+                <Typography variant='p' sx={{  
+                fontSize: { xs: '16px', sm: '18px', md: '20px' },
                 }}>
                 {t('home.subIntro')}
                 </Typography>
