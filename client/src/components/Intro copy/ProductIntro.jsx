@@ -14,7 +14,7 @@ import { useTranslation } from 'react-i18next'
 import RrImage from '../../assets/images/rrExample.jpg'
 
 const ProductIntro = () => {
-    const { t, i18n } = useTranslation()
+    const { t } = useTranslation()
 
     return(
         <Card sx={{ background: 'transparent', p: '5% 2% 5% 2%', mb: '5%', }}>

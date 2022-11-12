@@ -36,6 +36,10 @@
       "reset": "Reset",
       "delete": "Delete",
       "update": "Update"
+    },
+    "pricing": {
+      "title": "Unbeatable Price",
+      ""
     }
   },
   "about": {
