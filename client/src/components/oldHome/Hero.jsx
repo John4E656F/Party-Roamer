@@ -11,10 +11,8 @@ import {
 } from '@mui/material'
 import styled from '@emotion/styled'
 import BG from '../../assets/bgVideo.mp4'
-import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
-    const { t, i18n } = useTranslation()
 
     const HeroWrapper = styled.div`
         border-right: none;
@@ -34,13 +32,8 @@ const Hero = () => {
     margin-right: auto;
     left: 0;
     right: 0;
-    width: 50%;
+    width: 40%;
     color: #fff;
-
-    @media (max-width: 600px) {
-        margin-top: 5%;
-        width: 65%;
-    }
     `
 
     const Video = styled.video`
@@ -55,21 +48,14 @@ const Hero = () => {
             <HeroWrapper>
                 <VideoContainer>
                     <TitleContainer>
-                    <Grid sx={{ 
-                        textAlign: 'center', 
-                        padding: '10px 10px 10px 10px', 
-                        borderRadius: '5px', 
-                        opacity: '70%', 
-                        backgroundColor: '#B8B8B8', 
-                        width: 'auto',
-                    }}>
-                        <Typography variant='h1' 
+                    <Grid sx={{ textAlign: 'center', padding: '10px 10px 10px 10px', borderRadius: '5px', opacity: '70%', backgroundColor: '#B8B8B8', width: 'auto',}}>
+                        <Typography variant='h3' 
                             sx={{ 
-                                fontSize: { xs: '25px', sm: '40px', md: '26px' },
+                                fontSize: { xs: '16px', sm: '20px', md: '26px' },
                                 fontStyle: 'bold',
                                 mb: 2
-                            }}>{t('home.hero.text')}</Typography>
-                            <Button variant="contained" size='small'>{t('home.hero.button')}</Button>
+                            }}>Take your event to the next level</Typography>
+                            <Button variant="contained" >Hello</Button>
                     </Grid>
                     </TitleContainer>
                     <Video autoPlay loop muted className="video" style={{ position: 'absolute'}}>

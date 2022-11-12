@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import AppRoutes from './routing'
 
-import themes from './themes/index';
+import theme from './themes/theme';
 import {
 	CssBaseline,
 	useTheme
@@ -10,11 +10,11 @@ import {
 import './App.css';
 
 function App() {
-  const themes = useTheme();
+  // const themes = useTheme(theme);
   
   return (
     <>
-    <ThemeProvider theme={themes}>
+    <ThemeProvider theme={theme}>
         <CssBaseline />
         <AppRoutes />
     </ThemeProvider>

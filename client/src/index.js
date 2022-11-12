@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/scss/style.scss'
-import './assets/scss/_themes-vars.module.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './i18n/i18n'

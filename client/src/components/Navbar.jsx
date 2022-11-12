@@ -23,7 +23,7 @@ import { useTranslation } from 'react-i18next'
 import Logo from '../assets/images/PartyRoamerLogo.svg'
 
 const Navbar = (props) => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
   const navItems = [t('navigation.home'), t('navigation.pricing'), t('navigation.contact')]
@@ -63,55 +63,50 @@ const Navbar = (props) => {
                   sx={{
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    padding: { xs: "0 0 0 0", md: "0 7em 0 7em" } ,
+                    padding: { xs: "0 0 0 0", sm: "0 0 0 0", md: "0 8em 0 8em", lg: "0 12em 0 12em" } ,
                     // gap: "10px",
 
                   }}>
-                  <Grid item sm={2}>
+                  <Grid item xs={10} sm={11} md={3} lg={4} >
                     <Avatar src={Logo} sx={{ width: 60, height: 60, }} />
                   </Grid>
-                  <Grid item sm={8}>
-                    <List sx={{ display: { xs: 'none', sm: 'flex' }, flexGrow: 2 }}>
-                      <ListItem alignItems="flex-start"
-                        sx={{
-                          display: 'flex',
-                          justifyContent: 'space-evenly',
-                          fontSize: { xs: '16px', sm: '20px', md: '26px' },
-                        }}>
+                  <Grid item md={5} lg={4}>
+                    <List sx={{ display: { xs: 'none', md: 'flex' }, }}>
                           {navItems.map((item) => (
-                            <Button key={item} sx={{ color: '#fff' }}>
-                              {item}
-                            </Button>
+                            <ListItem key={item} >
+                              <NavLink to={item.toLocaleLowerCase()}>
+                                <ListItemText primary={item} sx={{color: '#fff',}}/>
+                              </NavLink>
+                            </ListItem>
                           ))}
-                      </ListItem>
                     </List>
                   </Grid>
-                  <Grid item sm={2} sx={{ display: { xs: 'none', sm: 'flex'}, gap: 2, flexGrow:1, justifyContent:"flex-end", }}>
-                      <Button component="a" href="#" variant="contained">Book Us</Button>
+                  <Grid item md={4} lg={4} sx={{ alignItems: 'center', display: { xs: 'none', md: 'flex'}, gap: 1, flexGrow:1, justifyContent:"flex-end", }}>
+                      <Button component="a" href="#" variant="contained" color="cta">Book Us</Button>
                       <LangSwitcher />
                   </Grid>
-                  <IconButton
-                    color="inherit"
-                    aria-label="open navigation"
-                    edge="start"
-                    onClick={handleDrawerToggle}
-                    sx={{ mr: 2, display: { sm: 'none' } }}>
-                      <MenuIcon />
-                    </IconButton>
-                  <Box component='nav' sx={{backgroundColor: 'blue'}}>
-                    <Drawer
-                      container={container}
-                      variant="temporary"
-                      open={mobileOpen}
-                      onClose={handleDrawerToggle}
-                      sx={{
-                        // backgroundColor: 'red',
-                        display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240},
-                      }}>
-                        {drawer}
-                      </Drawer>
-                  </Box>
+                    <IconButton
+                      color="inherit"
+                      aria-label="open navigation"
+                      edge="start"
+                      onClick={handleDrawerToggle}
+                      sx={{ display: { md: 'none' }, }}>
+                        <MenuIcon />
+                      </IconButton>
+                    <Box component='nav' sx={{backgroundColor: 'blue'}}>
+                      <Drawer
+                        container={container}
+                        variant="temporary"
+                        open={mobileOpen}
+                        onClose={handleDrawerToggle}
+                        sx={{
+                          // backgroundColor: 'red',
+                          display: { xs: 'block', sm: 'none' },
+                          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240},
+                        }}>
+                          {drawer}
+                        </Drawer>
+                    </Box>
                 </Grid>
               </Toolbar>
           </AppBar>

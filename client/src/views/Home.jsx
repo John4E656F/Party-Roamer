@@ -5,9 +5,11 @@ import { useSelector } from 'react-redux'
 import {
     Grid,
 } from '@mui/material'
-import Hero from '../components/Home/Hero'
+import Hero from '../components/Hero/Hero'
+// import RingRoamer from '../components/RingRoamer'
 import Intro from '../components/Intro/index'
 import Event from '../components/Event/index'
+import HomePricing from '../components/HomePricing/HomePricing'
 import Footer from '../components/Footer'
 
 const Home = () => {
@@ -15,9 +17,10 @@ const Home = () => {
     return(
         <Fragment>
             <Hero />
+            {/* <RingRoamer /> */}
             <Intro />
             <Event />
-            <Footer />
+            <HomePricing />
         </Fragment>
     )
 }

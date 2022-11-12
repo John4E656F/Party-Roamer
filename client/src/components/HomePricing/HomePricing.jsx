@@ -7,9 +7,9 @@ import {
 } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 
-import EventDetails from './EventDetails'
 
-const Event = () => {
+
+const HomePricing = () => {
     const { t } = useTranslation()
 
     return (
@@ -29,11 +29,11 @@ const Event = () => {
                 </Typography>
             </Grid>
             <Grid item xs={8} sx={{ mt: '5%'}}>
-                <EventDetails />
+
             </Grid>
 
         </Grid>
     )
 }
 
-export default Event
+export default HomePricing
