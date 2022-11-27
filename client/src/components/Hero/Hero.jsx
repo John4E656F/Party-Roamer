@@ -14,7 +14,7 @@ const Hero = () => {
     const { t } = useTranslation()
 
     return(
-        <Grid container sx={{m: "3% 0 3% 0"}}>
+        <Grid container sx={{m: "5% 0 3% 0"}}>
             <Grid item xs={12} md={12} sx={{ textAlign: "center", alignContent: "center",  }}>
                 <Typography variant="h2" component="h2" gutterBottom sx={{ fontWeight: 'bold'}}>
                 {t('home.hero.title')}

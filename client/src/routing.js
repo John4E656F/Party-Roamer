@@ -1,6 +1,6 @@
 
 import React, { useState, Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, } from "react-router-dom";
 import { useTranslation } from "react-i18next"
 import { BrowserRouter } from 'react-router-dom'
 import LocaleContext from "./utils/LocaleContext"
@@ -26,7 +26,7 @@ const Routing = () => {
                         {/* <Route path="/home" element={<Home />} />
                         <Route path="/pricing" element={<Pricing />} /> */}
 
-                        <Route path={`${t('navigation.home')}`} element={<Home />} />
+                        <Route default path={`/`} element={<Home />} />
                         <Route path={`${t('navigation.pricing')}`} element={<Pricing />} />
                     </Routes>
                 <Footer />

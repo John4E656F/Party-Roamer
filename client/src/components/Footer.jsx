@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
-    Box,
     Typography,
     Grid,
     Avatar,
-    AppBar,
-    Toolbar,
-    Card,
     Divider,
 } from '@mui/material'
 import { useTranslation } from 'react-i18next'
@@ -18,6 +14,7 @@ const Footer = (props) => {
 
     return(
         <Grid container
+        component='footer'
             sx={{
                 justifyContent: 'center',
               alignItems: 'center',
@@ -30,7 +27,9 @@ const Footer = (props) => {
                 justifyContent: 'center', 
                 padding: { xs: "0 0 0 0", sm: "0 0 0 0", md: "8em 0 0 0", lg: "2em 0 0 0" }
             }}>
-                <Avatar src={Logo} sx={{ width: 100, height: 100, }} />
+                <Link to={t('navigation.home')}>
+                    <Avatar src={Logo} sx={{ width: 100, height: 100, }} />
+                </Link>
             </Grid>
             <Grid item xs={6} sx={{
                 display: 'flex',
@@ -73,14 +72,17 @@ const Footer = (props) => {
                 display: 'flex', 
                 justifyContent: 'space-between', 
                 color: 'white',
-                padding: { xs: "0 0 0 0", sm: "0 0 0 0", md: "0 8em 0 8em", lg: "0 12em 0 12em" }
+                padding: { xs: "0 0 0 0", sm: "0 0 0 0", md: "0 8em 0 8em", lg: "0 16em 0 16em" },
+                mb: '0.5em'
                 }}>
                 <Typography variant="text" >
                     Copyright 2021 Party Roamer
                 </Typography>
-                <Typography variant="text" >
-                    Privacy & Confidentiality Policy
-                </Typography>
+                <NavLink to='#'>
+                    <Typography variant="text" sx={{color: '#7070e3'}}>
+                        Privacy & Confidentiality Policy
+                    </Typography>
+                </NavLink>
             </Grid>
         </Grid>     
     )

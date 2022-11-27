@@ -33,7 +33,7 @@ export default function LangSwitcher() {
       if (locale !== l) {
         i18n.changeLanguage(l);
         setLang(i18n.language)
-        navigate(`${t('navigation.home')}`)
+        navigate(`/`)
         localStorage.setItem("i18nextLng", l)
       }
     }

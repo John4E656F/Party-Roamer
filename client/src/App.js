@@ -5,12 +5,10 @@ import AppRoutes from './routing'
 import theme from './themes/theme';
 import {
 	CssBaseline,
-	useTheme
   } from '@mui/material'
 import './App.css';
 
 function App() {
-  // const themes = useTheme(theme);
   
   return (
     <>

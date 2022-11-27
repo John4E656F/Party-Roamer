@@ -17,7 +17,6 @@ import {
   Avatar
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
-import { useSelector } from 'react-redux'
 import LangSwitcher from './LangSwitcher'
 import { useTranslation } from 'react-i18next'
 import Logo from '../assets/images/PartyRoamerLogo.svg'
@@ -26,7 +25,7 @@ const Navbar = (props) => {
   const { t } = useTranslation()
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navItems = [t('navigation.home'), t('navigation.pricing'), t('navigation.contact')]
+  const navItems = [t('navigation.pricing'), t('navigation.contact')]
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -54,12 +53,12 @@ const Navbar = (props) => {
       <>
         <Box sx={{ display: 'flex'}} >
           <AppBar
-              position='static'
-              // color='primary'
               elevation={0}
+              backgroundColor='red'
           >
               <Toolbar >
-                <Grid container
+                <Grid container 
+                  position='sticky'
                   sx={{
                     justifyContent: 'space-between',
                     alignItems: 'center',
@@ -72,6 +71,11 @@ const Navbar = (props) => {
                   </Grid>
                   <Grid item md={5} lg={4}>
                     <List sx={{ display: { xs: 'none', md: 'flex' }, }}>
+                            <ListItem key={t('navigation.home')} >
+                              <NavLink to='/'>
+                                <ListItemText primary={t('navigation.home')} sx={{color: '#fff',}}/>
+                              </NavLink>
+                            </ListItem>
                           {navItems.map((item) => (
                             <ListItem key={item} >
                               <NavLink to={item}>
