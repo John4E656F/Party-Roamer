@@ -6,9 +6,13 @@
       "text": "Uw gasten hoeven niet naar de photobooth te gaan - hij komt naar hen!",
       "button": "Ontdek meer"
     },
-    "intro": "Een photobooth is de perfecte, leuke toevoeging aan elk evenement of feest dat je plant. Onze Roaming Photo Booth zal een blijvende indruk maken op elk evenement dat u organiseert en zal een persoonlijk tintje geven dat indruk zal maken op uw gasten. Laat mensen de geweldige tijd zien die ze kunnen beleven op een nieuwe, interactieve manier van photobooth-ervaringen.",
+    "intro": "Een photobooth is de perfecte, leuke toevoeging aan elk evenement of feest dat je plant.",
+    "subIntro": "Onze Roaming Photo Booth zal een blijvende indruk maken op elk evenement dat u organiseert, en zal een persoonlijk tintje geven dat indruk zal maken op uw gasten. Toon mensen de geweldige tijd die kan worden gehad in een nieuwe, interactieve manier van foto booth ervaringen.",
     "product": {
       "title": "Party Roamer Photobooth",
+      "twoInOne": "Selfie Station & Roaming Photobooth",
+      "attendant": "Professionele rondreizende Photobooth Attendant",
+      "modern": "Uitnodigender, moderner en aantrekkelijker dan de traditionele stijl",
       "body": "Ook bekend als een openluchtfotohokje of selfiestation, zijn roamingcabines populairder geworden omdat ze vaak een interactief scherm voor deelnemers hebben, foto's digitaal kunnen aanleveren, meer mensen op de foto's passen, meer opties voor software hebben en over het algemeen uitnodigender, moderner en aantrekkelijker dan de traditionele stijl."
     },
     "event": {
@@ -44,6 +48,7 @@
   "navigation": {
       "home": "Huis",
       "pricing": "Onze Prijzen",
-      "contact": "Contact"
+      "contact": "Contact",
+      "booking": "Boek nu"
   }
 }

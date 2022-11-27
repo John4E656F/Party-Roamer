@@ -33,6 +33,12 @@ i18n
                 translation: nl,
             },
         },
+        whitelist: ['en', 'fr', 'nl'],
+        detection: {
+            order: ['path'],
+            lookupFromPathIndex: 0,
+            checkWhitelist: true
+          },
         cache: {
             enabled: true,
             expirationTime: 7*24*60*60*1000,

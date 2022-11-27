@@ -55,7 +55,7 @@ const Navbar = (props) => {
         <Box sx={{ display: 'flex'}} >
           <AppBar
               position='static'
-              color='primary'
+              // color='primary'
               elevation={0}
           >
               <Toolbar >
@@ -74,7 +74,7 @@ const Navbar = (props) => {
                     <List sx={{ display: { xs: 'none', md: 'flex' }, }}>
                           {navItems.map((item) => (
                             <ListItem key={item} >
-                              <NavLink to={item.toLocaleLowerCase()}>
+                              <NavLink to={item}>
                                 <ListItemText primary={item} sx={{color: '#fff',}}/>
                               </NavLink>
                             </ListItem>
@@ -82,7 +82,7 @@ const Navbar = (props) => {
                     </List>
                   </Grid>
                   <Grid item md={4} lg={4} sx={{ alignItems: 'center', display: { xs: 'none', md: 'flex'}, gap: 1, flexGrow:1, justifyContent:"flex-end", }}>
-                      <Button component="a" href="#" variant="contained" color="cta">Book Us</Button>
+                      <Button component="a" href="#" variant="contained" color="cta">{t('navigation.booking')}</Button>
                       <LangSwitcher />
                   </Grid>
                     <IconButton

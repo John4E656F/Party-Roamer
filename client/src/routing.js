@@ -14,7 +14,8 @@ const Routing = () => {
     const { i18n } = useTranslation()
     const [locale, setLocale] = useState(i18n.language);
     i18n.on('languageChanged', (lng) => setLocale(i18n.language));
-
+    const { t } = useTranslation()
+    
     return (
         <>
         <LocaleContext.Provider value={{locale, setLocale}}>
@@ -22,8 +23,11 @@ const Routing = () => {
                 <Suspense fallback={<div>Loading...</div>}>
                 <Navbar />
                     <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/pricing" element={<Pricing />} />
+                        {/* <Route path="/home" element={<Home />} />
+                        <Route path="/pricing" element={<Pricing />} /> */}
+
+                        <Route path={`${t('navigation.home')}`} element={<Home />} />
+                        <Route path={`${t('navigation.pricing')}`} element={<Pricing />} />
                     </Routes>
                 <Footer />
                 </Suspense>

@@ -1,5 +1,5 @@
 import { useState, useRef, useContext } from 'react';
-import { useSelector, useDispatch } from "react-redux";
+import { useNavigate } from 'react-router-dom';
 import {
     Button,
     ButtonGroup,
@@ -12,7 +12,6 @@ import {
 } from '@mui/material'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useTranslation } from 'react-i18next'
-import i18next from 'i18next';
 import LocaleContext from "../utils/LocaleContext"
 
 const lngs = {
@@ -28,20 +27,14 @@ export default function LangSwitcher() {
     const { t, i18n } = useTranslation();
     const [lang, setLang] = useState('en')
     const { locale } = useContext(LocaleContext);
-
-    // const handleMenuItemClick = (lng) => {
-    //   setLang
-    //   i18n.changeLanguage(lng)
-    //   setOpen(false);
-    // };
+    const navigate = useNavigate();
 
     function changeLocale (l) {
-      console.log(l)
       if (locale !== l) {
         i18n.changeLanguage(l);
         setLang(i18n.language)
-        // window.location.replace(`/${l}`)
-        // localStorage.setItem("i18nextLng", lang)
+        navigate(`${t('navigation.home')}`)
+        localStorage.setItem("i18nextLng", l)
       }
     }
   
