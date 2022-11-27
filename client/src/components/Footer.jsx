@@ -68,7 +68,7 @@ const Footer = (props) => {
                     </Grid>
                 </Grid>
             </Grid>
-            <Divider width='80%' sx={{ m: '1em 0 1em 0'}}/>
+            <Divider width='80%' color='white' sx={{ m: '1em 0 1em 0'}}/>
             <Grid item xs={12} sx={{ 
                 display: 'flex', 
                 justifyContent: 'space-between', 
