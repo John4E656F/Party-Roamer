@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Import Assets
-import VideoAsset from '../../assets/heroVideo.mp4'
+import VideoAsset from '../../../assets/heroVideo.mp4'
 import {
     Grid,
 } from '@mui/material'

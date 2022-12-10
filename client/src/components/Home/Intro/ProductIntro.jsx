@@ -14,7 +14,7 @@ import {
 import AdjustIcon from '@mui/icons-material/Adjust';
 import { useTranslation } from 'react-i18next'
 
-import rrModes from '../../assets/images/rrModes.png'
+import rrModes from '../../../assets/images/rrModes.png'
 
 const ProductIntro = () => {
     const { t } = useTranslation()

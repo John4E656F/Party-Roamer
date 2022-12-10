@@ -54,7 +54,6 @@ const Navbar = (props) => {
         <Box sx={{ display: 'flex'}} >
           <AppBar
               elevation={0}
-              backgroundColor='red'
           >
               <Toolbar >
                 <Grid container 
@@ -64,7 +63,6 @@ const Navbar = (props) => {
                     alignItems: 'center',
                     padding: { xs: "0 0 0 0", sm: "0 0 0 0", md: "0 8em 0 8em", lg: "0 12em 0 12em" } ,
                     // gap: "10px",
-
                   }}>
                   <Grid item xs={10} sm={11} md={3} lg={4} >
                     <Avatar src={Logo} sx={{ width: 60, height: 60, }} />
