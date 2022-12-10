@@ -26,12 +26,9 @@ const Intro = () => {
         "+2 Hours : €150",
         "Extra Attendant : €100",
     ]
-    const generate = (element) => {
-        return includes.map((value) => cloneElement(element, {key: value, primary: value}),
-        )
-    }
+
     return (
-            <Card raised="true" sx={{ backgroundColor:'blue', p:2, borderRadius:2}}>
+            <Card raised="true" sx={{ backgroundColor:'#D0D0D0', p:2, borderRadius:2}}>
                 <CardHeader 
                     avatar={<AddCircleOutlineIcon />}
                     title={

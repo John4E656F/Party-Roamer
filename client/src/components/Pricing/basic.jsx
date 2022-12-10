@@ -30,12 +30,9 @@ const Intro = () => {
         "Print Station",
         "100 prints (200 photo strips)"
     ]
-    const generate = (element) => {
-        return includes.map((value) => cloneElement(element, {key: value, primary: value}),
-        )
-    }
+
     return (
-            <Card raised="true" sx={{ backgroundColor:'blue', p:2, borderRadius:2}}>
+            <Card raised="true" sx={{  p:2, borderRadius:2}}>
                 <CardHeader 
                     avatar={<CameraRollIcon />}
                     title={

@@ -29,12 +29,10 @@ const Intro = () => {
         "Custom Design",
         "Email/SMS Sharing",
     ]
-    const generate = (element) => {
-        return includes.map((value) => cloneElement(element, {key: value, primary: value}),
-        )
-    }
+
+  
     return (
-            <Card raised="true" sx={{ backgroundColor:'blue', p:2, borderRadius:2}}>
+            <Card raised="true" sx={{ p:2, borderRadius:2}}>
                 <CardHeader 
                     avatar={<PhotoCameraBackIcon />}
                     title={
@@ -59,7 +57,7 @@ const Intro = () => {
                 <Divider/>
                 <CardContent>
                     <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-                        Text only
+                        Digital Package Includes:
                     </Typography>
                     <List>
                     {includes.map((item, i) => (

@@ -26,7 +26,7 @@ const Intro = () => {
                 {t('home.hero.text')}
                 </Typography>
             </Grid>
-            <Grid container sx={{ justifyContent: "center", alignContent: "center", mt: "2%", gap: 8, backgroundColor: 'red' }}>
+            <Grid container sx={{ justifyContent: "center", mt: "2%", p:"2% 0 2% 0", gap: 8, backgroundColor: '#B7B7B7' }}>
                 <Grid item xs={2}>
                     <Digital/>
                 </Grid>
